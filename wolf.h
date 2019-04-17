@@ -38,5 +38,18 @@ typedef struct s_wall
 	int y4;
 }               t_wall;
 
+typedef struct		s_tga
+{
+	unsigned char	id_length;
+	unsigned char	color_map;
+	unsigned char	data_type;
+	unsigned char	xy_origin[2];
+	short int		width;
+	short int		height;
+	unsigned char	bpp;
+	unsigned char	flip_g;
+	unsigned char	flip_v;
+}					t_tga;
+
 t_texture readbmp(char* filename);
 #endif
